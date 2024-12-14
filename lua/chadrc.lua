@@ -1,16 +1,12 @@
--- This file  needs to have same structure as nvconfig.lua
--- https://github.com/NvChad/NvChad/blob/v2.5/lua/nvconfig.lua
-
----@type ChadrcConfig
-local M = {}
+M = {}
 
 M.ui = {
-  theme = "onedark",
-  transparency = true,
   statusline = {
     theme = "vscode_colored",
   },
-  nvdash = {
+}
+
+M.nvdash = {
     load_on_startup = true,
     header = {
       "██████╗ ██╗   ██╗██████╗ ██████╗ ██╗     ███████╗",
@@ -20,8 +16,10 @@ M.ui = {
       "██║     ╚██████╔╝██║  ██║██║     ███████╗███████╗",
       "╚═╝      ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚══════╝╚══════╝",
     },
-  },
+  }
 
+M.base46 = {
+  transparency = true,
   hl_override = {
     Comment = { italic = true },
     ["@comment"] = { italic = true },
